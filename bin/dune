@@ -1,0 +1,6 @@
+(executable
+ (public_name algo_studies)
+ (name main)
+ (libraries algo_studies base alg_structs )
+ (preprocess
+  (pps ppx_deriving.std)))

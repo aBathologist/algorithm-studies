@@ -1,0 +1,5 @@
+(library
+ (name algo_studies)
+ (libraries base containers alg_structs )
+ (preprocess
+  (pps ppx_deriving.std)))

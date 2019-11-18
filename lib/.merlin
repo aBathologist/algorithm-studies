@@ -1,0 +1,25 @@
+EXCLUDE_QUERY_DIR
+B /home/sf/.opam/ocaml-base-compiler/lib/alg_structs
+B /home/sf/.opam/ocaml-base-compiler/lib/base
+B /home/sf/.opam/ocaml-base-compiler/lib/base/caml
+B /home/sf/.opam/ocaml-base-compiler/lib/base/shadow_stdlib
+B /home/sf/.opam/ocaml-base-compiler/lib/containers
+B /home/sf/.opam/ocaml-base-compiler/lib/containers/monomorphic
+B /home/sf/.opam/ocaml-base-compiler/lib/ppx_deriving/runtime
+B /home/sf/.opam/ocaml-base-compiler/lib/result
+B /home/sf/.opam/ocaml-base-compiler/lib/sexplib0
+B /home/sf/.opam/ocaml-base-compiler/lib/uchar
+B ../_build/default/lib/.algo_studies.objs/byte
+S /home/sf/.opam/ocaml-base-compiler/lib/alg_structs
+S /home/sf/.opam/ocaml-base-compiler/lib/base
+S /home/sf/.opam/ocaml-base-compiler/lib/base/caml
+S /home/sf/.opam/ocaml-base-compiler/lib/base/shadow_stdlib
+S /home/sf/.opam/ocaml-base-compiler/lib/containers
+S /home/sf/.opam/ocaml-base-compiler/lib/containers/monomorphic
+S /home/sf/.opam/ocaml-base-compiler/lib/ppx_deriving/runtime
+S /home/sf/.opam/ocaml-base-compiler/lib/result
+S /home/sf/.opam/ocaml-base-compiler/lib/sexplib0
+S /home/sf/.opam/ocaml-base-compiler/lib/uchar
+S .
+FLG -ppx '/home/sf/Sync/Programming/algo_studies/_build/default/.ppx/30a18adec0a1407675322d723bf1b0ae/ppx.exe --as-ppx --cookie '\''library-name="algo_studies"'\'''
+FLG -open Algo_studies -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs
