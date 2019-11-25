@@ -1,5 +1,5 @@
 #+TITLE: Algorithm Studies
 
-The various programs in this repo are exercises taken from sources like,
+The various programs in this repo are implement algorithms taken from sources like,
 "Cracking the Coding Interview", "The Algorithm Design Manual", RosettaCode,
-etc.
+etc. I.e., they are artifacts resulting from some exercises.
