@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/algo_studies/META"
+  "_build/install/default/lib/algo_studies/dune-package"
+  "_build/install/default/lib/algo_studies/opam"
+]
+bin: [
+  "_build/install/default/bin/algo_studies"
+]
