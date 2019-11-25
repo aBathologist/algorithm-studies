@@ -9,10 +9,10 @@ Any code shared between implementations belongs in
 The =[[file:Makefile][Makefile]]= is configured to generate the correct rules
 for any new programs written following this pattern.
 
-To build and run a program, invoke
+To build and run a single program, invoke
 
 #+BEGIN_SRC sh
-./run.sh foo.c
+./run.sh foo.c # or just `/.run.sh foo`
 #+END_SRC
 
 To simply build all the program, run =make=. The executables will end up in
