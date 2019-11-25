@@ -1,0 +1,19 @@
+#+TITLE: Algorithm Studies in C
+
+Each file =./foo.c= contains an implementation of an algorithm or data structure
+along with some tests or output to check correctness.
+
+Any code shared between implementations belongs in
+=[[file:utils/utils.h][file.{c,h}]]=.
+
+The =[[file:Makefile][Makefile]]= is configured to generate the correct rules
+for any new programs written following this pattern.
+
+To build and run a program, invoke
+
+#+BEGIN_SRC sh
+./run.sh foo.c
+#+END_SRC
+
+To simply build all the program, run =make=. The executables will end up in
+=_build/bin=.
