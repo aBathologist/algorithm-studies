@@ -20,7 +20,7 @@ _build/obj:
 
 _build: _build/bin _build/obj
 
-$(DEPSO): $(OBJ_DIR)/%.o: $(DEPS) _build
+$(DEPSO): $(OBJ_DIR)/%.o: utils/%.c _build
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(BIN_DIR)/%: %.c $(DEPSO)
