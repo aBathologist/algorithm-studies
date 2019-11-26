@@ -44,9 +44,9 @@ bool is_substring(char sub[], char str[]) {
 
 void test(char test_name[], bool test_result, bool results) {
   if (test_result) {
-    printf("Test '%s' passed\n", test_name);
+    printf("[OK] Test '%s' passed\n", test_name);
   } else {
-    printf("Tests '%s' failed\n", test_name);
+    printf("[ERR] Tests '%s' failed\n", test_name);
   }
   results = results && results;
 }
