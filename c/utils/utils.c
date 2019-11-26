@@ -21,6 +21,14 @@ void print_matrix(int n, int m[n][n]) {
   }
 }
 
+bool arrays_equal(int *a, int *b, int len) {
+  bool result = true;
+  for (int i = 0; i < len; i++) {
+    result = result && (a[i] == b[i]);
+  }
+  return result;
+}
+
 bool is_substring(char sub[], char str[]) {
   int i, j, s;
 
