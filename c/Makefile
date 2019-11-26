@@ -7,8 +7,8 @@ BUILD_DIR = ./_build
 BIN_DIR = $(BUILD_DIR)/bin
 OBJ_DIR = $(BUILD_DIR)/obj
 
-DEPS = utils/utils.h utils/utils.c
-DEPSO = $(OBJ_DIR)/utils.o
+DEPS = $(wildcard utils/*.c)
+DEPSO = $(foreach dep,$(DEPS),$(OBJ_DIR)/$(basename $(notdir $(dep))).o)
 
 PROGRAMS = $(basename $(wildcard *.c))
 
@@ -20,8 +20,8 @@ _build/obj:
 
 _build: _build/bin _build/obj
 
-$(DEPSO): $(DEPS) _build
-	$(CC) -c -o $(OBJ_DIR)/utils.o utils/utils.c $(CFLAGS)
+$(DEPSO): $(OBJ_DIR)/%.o: $(DEPS) _build
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(BIN_DIR)/%: %.c $(DEPSO)
 	$(CC) -o $@ $(DEPSO) $< $(CFLAGS)
